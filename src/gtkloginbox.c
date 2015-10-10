@@ -13,17 +13,17 @@
 #include "gtkloginbox.h"
 #include "gtkprompt.h"
 
-#define UFACE_W  150
+#define UFACE_W  100
 #define UFACE_H  UFACE_W
 #define UNAME_W  250
 #define UNAME_H  40
 #define SPACING  2
 #define PROMPT_W 244
 #define PROMPT_H 40
-#define INPUT_W  250
-#define INPUT_H  50
-#define BT_W     80
-#define BT_H     45
+#define INPUT_W  160 
+#define INPUT_H  45 
+#define BT_W     48
+#define BT_H     36 
 
 
 enum 
@@ -126,10 +126,10 @@ static void gtk_login_box_init (GtkLoginBox *box)
     gtk_widget_set_can_focus (GTK_WIDGET(box), FALSE);
 
     widget = gtk_entry_new ();
-    border.left = 12;
-    border.right = 12;
-    border.top = 16;
-    border.bottom = 16;
+    border.left = 2;
+    border.right = 2;
+    border.top = 6;
+    border.bottom = 6;
     gtk_entry_set_inner_border (GTK_ENTRY(widget), &border);
     gtk_widget_set_can_default (widget, TRUE);
     gtk_widget_set_can_focus (widget, TRUE);
